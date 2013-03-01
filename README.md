@@ -5,9 +5,10 @@ This grunt-init task will create a YUI3 Module folder, you probably want to fork
 
 Install grunt-init:
 
-  npm install -g grunt-init
-  mkdir ~/.grunt-init/ && cd $_
-  git clone git@github.com:earnubs/grunt-init-yui3.git
+''''
+npm install -g grunt-init
+mkdir ~/.grunt-init/ && cd $_
+git clone git@github.com:earnubs/grunt-init-yui3.git
 
 Create your module:
 
