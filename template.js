@@ -2,16 +2,18 @@
  *
  * grunit-init-yui
  *
- * TODO add licence
+ * Copyright (c) 2013 Canonical.
+ * Licensed under the MIT license.
+ *
  */
 
 'use strict';
 
 exports.description = "Create a YUI3 module, including tests.";
 
-exports.notes = "Note: requires should be a valid JSON array of module names";
+exports.notes = "* 'requires' should be a valid JSON array of module names";
 
-exports.after = "Great success!";
+exports.after = "All done!";
 
 // warn if we overwrite any files matching the pattern, override with --force
 exports.warnOn = "*";
