@@ -1,0 +1,15 @@
+{
+    "name": "{%= name %}",
+    "builds": {
+        "one-{%= name %}": {
+            "jsfiles": [
+                "./js/{%= name %}.js"
+            ],
+            "config": {
+                "use": [
+                    {%= requires %}
+                ]
+            }
+        }
+    }
+}
