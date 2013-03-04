@@ -8,7 +8,7 @@ Install grunt-init:
 
     npm install -g grunt-init
     mkdir ~/.grunt-init/ && cd $_
-    git clone git@github.com:earnubs/grunt-init-yui3.git
+    git clone git@github.com:earnubs/grunt-init-yui3.git yui3
 
 Create your module:
 
