@@ -5,9 +5,11 @@
             "jsfiles": [
                 "./js/{%= name %}.js"
             ],
+        "replace": {
+            "@VERSION@": "{%= version %}"
+        },
             "config": {
                 "use": [
-                    {%= requires %}
                 ]
             }
         }

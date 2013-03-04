@@ -1,4 +1,5 @@
 {
+    "**/*.swp": false,
     "js/name.js": "js/{%= name %}.js",
     "tests/unit/name.html": "tests/unit/{%= name %}.html",
     "tests/unit/assets/name.js": "tests/unit/assets/{%= name %}.js"
