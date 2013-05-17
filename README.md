@@ -1,7 +1,7 @@
 grunt-init-yui
 ==============
 
-This grunt-init task will create a YUI3 Module folder, fork it and make sure the templates suit your setup (there's currently some junk in there from our setup).
+This grunt-init task will create a YUI3 Module folder. Fork it to make sure the templates suit your setup (there's currently some junk in there from our setup).
 
 Install grunt-init:
 
