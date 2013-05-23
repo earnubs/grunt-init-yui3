@@ -12,8 +12,7 @@ Install grunt-init:
 
 Create your module:
 
-    mkdir js/myModule
-    cd js/myModule
+    mkdir myModule && cd $_
     grunt-init yui3
 
 The default module name will be taken from the folder name within which you call
