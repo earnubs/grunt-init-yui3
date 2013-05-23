@@ -9,7 +9,7 @@
 
 'use strict';
 
-exports.description = "Create a YUI3 module, including tests.";
+exports.description = "Scaffold a YUI3 module, including tests.";
 
 exports.after = "All done!";
 
@@ -23,14 +23,9 @@ exports.template = function(grunt, init, done) {
                  // the module name
                  // TODO submodules
                  init.prompt('name'),
-
                  init.prompt('description'),
-
                  // the module version
-                 init.prompt('version'),
-
-
-                 // should we use mocha rather than YUI Test
+                 init.prompt('version')
 
     ], function(err, props) {
 
