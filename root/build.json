@@ -9,7 +9,7 @@
             "@VERSION@": "{%= version %}"
         },
             "config": {
-                "use": [
+                "requires": [
                 ]
             }
         }

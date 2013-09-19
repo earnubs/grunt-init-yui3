@@ -1,30 +1,16 @@
-YUI.add('{%= name %}-test', function (Y) {
+YUI.add('module-tests', function(Y) {
 
-var Assert = Y.Assert,
-    suite;
+    /**
+     * Suite silently failing with nothing logged? Something in setup is
+     * throwing an error!
+     */
 
-suite = new Y.Test.Suite('  ');
+    Y.Test.Runner.add(new Y.Test.Case({
+        name: 'Automated Tests',
+        'test is empty': function() {
+            Y.Assert.fail('No Tests Provided For This Module');
+        }
+    }));
 
-suite.add(new Y.Test.Case({
+},'', { requires: [ 'test' ] });
 
-    name: '',
-
-    setUp : function () {
-
-    },
-
-    tearDown: function () {
-
-    },
-
-    " ": function() {
-
-    }
-
-}));
-
-Y.Test.Runner.add(suite);
-
-}, '@VERSION@', {
-        requires: ['one-{%= name %}', 'test']
-});
