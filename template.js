@@ -22,8 +22,6 @@ exports.template = function(grunt, init, done) {
         init.prompt('name'),
         init.prompt('description'),
         init.prompt('version'),
-        init.prompt('yui_path', '../../../../bower_components/yui3/build/yui/yui-min.js'),
-        init.prompt('modules_config', '../../../../build/config.js')
 
     ], function(err, props) {
 

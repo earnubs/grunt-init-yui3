@@ -3,8 +3,8 @@
 <title>{%= name %} Unit Tests</title>
 <link rel="stylesheet" href="../../../../node_modules/mocha/mocha.css">
 
-<script src="{%= yui_path %}"></script>
-<script src="{%= modules_config %}"></script>
+<script src="../../../../bower_components/yui3/build/yui/yui-min.js"></script>
+<script src="../../../../build/config.js"></script>
 
 <script src="../../../../node_modules/mocha/mocha.js"></script>
 <script src="../../../../node_modules/chai/chai.js"></script>
@@ -20,11 +20,11 @@
 </script>
 <script src="js/tests.js"></script>
 <script>
-YUI().use(function(Y) {
+YUI().use('node', function(Y) {
   if (window.mochaPhantomJS) {
     mochaPhantomJS.run();
     } else {
-    window.testRunner = mocha.run();
+    mocha.run();
   }
   });
 </script>
