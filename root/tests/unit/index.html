@@ -1,16 +1,34 @@
 <!doctype html>
 <meta charset="utf-8" />
 <title>{%= name %} Unit Tests</title>
+<link rel="stylesheet" href="../../../../node_modules/mocha/mocha.css">
+
 <script src="{%= yui_path %}"></script>
 <script src="{%= modules_config %}"></script>
-<script src="js/tests.js"></script>
-  <!-- insert what dom stuff you need here -->
-<script>
-YUI({
-  coverage: ['{%= name %}'],
-}).use('test', 'module-tests', function(Y) {
 
-  Y.Test.Runner.setName('{%= name %}');
-  Y.Test.Runner.run();
-});
+<script src="../../../../node_modules/mocha/mocha.js"></script>
+<script src="../../../../node_modules/chai/chai.js"></script>
+
+<script>
+  var assert = chai.assert;
+  var expect = chai.expect;
+  var should = chai.should();
+
+  mocha.reporter('html');
+  mocha.ui('bdd');
+  mocha.setup({ignoreLeaks: false, timeout: 10000});
 </script>
+<script src="js/tests.js"></script>
+<script>
+YUI().use(function(Y) {
+  if (window.mochaPhantomJS) {
+    mochaPhantomJS.run();
+    } else {
+    window.testRunner = mocha.run();
+  }
+  });
+</script>
+
+<body>
+  <div id="mocha"></div>
+</body>

@@ -1,16 +1,18 @@
-YUI.add('module-tests', function(Y) {
+'use strict';
 
-    /**
-     * Suite silently failing with nothing logged? Something in setup is
-     * throwing an error!
-     */
+(function() {
+    describe('scaffold test', function() {
+        var Y;
 
-    Y.Test.Runner.add(new Y.Test.Case({
-        name: 'Automated Tests',
-        'test is empty': function() {
-            Y.Assert.fail('No Tests Provided For This Module');
-        }
-    }));
+        before(function(done) {
+            Y = YUI().use(
+                '{%= name %}', function(Y) {
+                done();
+            });
+        });
 
-},'', { requires: [ 'test' ] });
-
+        it('should be replaced', function() {
+            expect(false).to.be.ok;
+        });
+    });
+})();
