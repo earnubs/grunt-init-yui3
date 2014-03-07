@@ -1,4 +1,4 @@
 {
     "**/*.swp": false,
-    "js/name.js": "js/{%= name %}.js",
+    "js/name.js": "js/{%= name %}.js"
 }
