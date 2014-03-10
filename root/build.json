@@ -1,7 +1,7 @@
 {
     "name": "{%= name %}",
     "builds": {
-        "one-{%= name %}": {
+        "{%= name %}": {
             "jsfiles": [
                 "./js/{%= name %}.js"
             ],
