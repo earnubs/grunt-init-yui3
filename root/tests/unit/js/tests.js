@@ -1,18 +1,19 @@
 'use strict';
 
 (function() {
-    describe('scaffold test', function() {
+    describe('yui', function() {
         var Y;
 
         before(function(done) {
             Y = YUI().use(
-                '{%= name %}', function(Y) {
+                'node', function(Y) {
                 done();
             });
         });
 
-        it('should be replaced', function() {
-            expect(false).to.be.ok;
+        it('should be loaded', function() {
+            expect(Y.Node).to.exist;
+            expect(Y.App).to.not.exist;
         });
     });
 })();
